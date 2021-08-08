@@ -59,7 +59,6 @@ uploadFile.addEventListener("change", () => {
 
 // Downloading the Image
 downloadBtn.addEventListener("click", () => {
-  
   const fileExtension = fileName.slice(-4);
 
   let newFilename;
@@ -75,9 +74,8 @@ downloadBtn.addEventListener("click", () => {
 
 // Download function
 function download(canvas, filename) {
-  
   let e;
-  
+
   const link = document.createElement("a");
 
   // Set props
