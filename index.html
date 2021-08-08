@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Image Editor</title>
+</head>
+<body>
+    <div class="container-fluid main d-flex flex-column justify-content-around gap-3">
+        <h1 class="d-flex justify-content-center">Profile Picture Generator</h1>
+
+        <!-- Upload a Image -->
+        <div class="input-group mb-3 px-5">
+            <input type="file" class="form-control" id="inputFile">
+            <label class="input-group-text" for="inputFile">Upload</label>
+        </div>
+
+        <!-- HTML  Canvas -->
+        <canvas id="canvas" class="d-flex justify-content-center m-auto w-50" style="background: #ececec"></canvas>
+
+        <!-- Buttons -->
+        <div class="grid d-flex justify-content-evenly mt-5">
+            <button type="button" class="btn btn-secondary" id="greyscale">Greyscale It</button>
+            <button type="button" class="btn btn-primary" id="download-btn">Download</button>
+        </div>
+        
+
+    </div>
+
+    <!-- Caman CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js" integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+></script>
+
+    <!-- Js File -->
+    <script src="main.js"></script>
+</body>
+</html>
